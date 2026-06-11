@@ -284,8 +284,6 @@ def query_point_creator(q1, q2):
     q2 = preprocess(q2)
 
     # fetch basic features
-    input_query.append(len(q1))
-    input_query.append(len(q2))
 
     input_query.append(len(q1.split(" ")))
     input_query.append(len(q2.split(" ")))
@@ -312,4 +310,4 @@ def query_point_creator(q1, q2):
     # bow feature for q2
     q2_bow = cv.transform([q2]).toarray()
 
-    return np.hstack((np.array(input_query).reshape(1, 22), q1_bow, q2_bow))
+    return np.hstack((np.array(input_query).reshape(1, 20), q1_bow, q2_bow))
