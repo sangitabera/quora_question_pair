@@ -4,7 +4,16 @@ venv/
 __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
+
 *.pyc
 *.pyo
 *.pyd
+
 logs/
+tests/
+
+notebooks/
+data/
+datasets/
+
+README.md
