@@ -3,7 +3,7 @@ uvicorn
 pydantic
 streamlit
 requests
-scikit-learn
+scikit-learn==1.6.1
 joblib
 pytest
 python-multipart
@@ -11,9 +11,8 @@ xgboost
 spacy
 nltk
 fuzzywuzzy
+python-Levenshtein
 distance
-bs4
-re
+beautifulsoup4
 numpy
-pickle
-nltk
+httpx
